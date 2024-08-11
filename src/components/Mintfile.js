@@ -87,7 +87,7 @@ const MintFile = () => {
     console.log("image ipfs path is", imgViewString);
     setImageView(imgViewString);
     setMetaDataURl(getIPFSGatewayURL(metaData.url));
-    setTxURL(`https://mumbai.polygonscan.com/tx/${mintNFTTx.hash}`);
+    setTxURL(`https://optimism-sepolia.blockscout.com/tx/${mintNFTTx.hash}`);
     setTxURL(`Check transaction on Filecoin Explorer`);
     setTxStatus("File addition was successfully!");
     console.log("File preview completed");

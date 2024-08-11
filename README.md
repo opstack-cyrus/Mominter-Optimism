@@ -1,6 +1,6 @@
 # Mominter : : Decentralized Video Moment Minter
 
-A DApp to allow the user(host) to mint moments as NFT using the contracts deployed on Base
+A DApp to allow the user(host) to mint moments as NFT using the contracts deployed on Optimism
 
 ![Mominter](https://bafkreibsvdrhg4xrmdeujrz33smda7rziayuzpxb5cggcp4o5633sn4c2a.ipfs.nftstorage.link/)
 
@@ -28,11 +28,6 @@ The smart contract uses ERC-721 specification to hold metadata URI, ethers.js wa
 
 Live Dapp on Vercel: - <https://mominterbase.vercel.app/>
 
-Deployed to Polygon Chain:
-  Base Testnet deployed Address = "0xEA9113F3DCAf50541092847095112E76Ba6ceC05"
-
-  <https://base-goerli.blockscout.com/address/0xEA9113F3DCAf50541092847095112E76Ba6ceC05>
-
  Youtube video link: <https://youtu.be/OQpEU-Bzv1g>
 
 ## Getting Started
@@ -57,17 +52,16 @@ Try running some of the following tasks:
 
 Fork this repo using
 
-git clone <https://github.com/holyaustin/Mominter-Base.git>
+git clone 
 
-cd soldier-ant-colony
-
+cd clone dir
 npx hardhat node
 
 npx hardhat run scripts/deploy.js --network localhost
 
 npm run build
 
-## How to deploy to Filecoin  blockchain, update hardhat.config
+## How to deploy to op-sepolia  blockchain, update hardhat.config
 
 npx hardhat run scripts/deploy.js --network testnet
 
@@ -76,14 +70,6 @@ npx hardhat run scripts/deploy.js --network testnet
 E-mail - holyaustin@yahoo.com
 
 stay connected on twitter @holyaustin
-
-https://live-par-1-abr-cdn.livepush.io/live_abr_cdn/emaIqCGoZw-6/index.m3u8
-
-https://hyperspace.filfox.info/en/address/0xa6d6f4556b022c0c7051d62e071c0acece5a1228
-
-LightHouse API - 1eceb394-fc75-43cf-83b6-546c9c13da57
-
-Huddle01 - eee33ed8308ea7f4814202f6fee8c936c80d2f9f03d480b069f13974fe349e21
 
 ## Verify on Op Sepolia
 
