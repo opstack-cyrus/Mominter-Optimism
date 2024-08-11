@@ -9,6 +9,7 @@ import LockIcon from '../icons/lock';
 import HamburgerMenu from '../hamburger';
 import Navbar from './navbar';
 import ConnectWallet from '../ConnectWallet';
+import { IDKitWidget, VerificationLevel } from '@worldcoin/idkit'
 
 export default function Header() {
   const [state, setState] = useState({
@@ -34,6 +35,17 @@ export default function Header() {
       isMobileMenu: false,
     });
   };
+// TODO: Calls your implemented server route
+const verifyProof = async (proof) => {
+  throw new Error("TODO: verify proof server route")
+};
+
+// TODO: Functionality after verifying
+const onSuccess = () => {
+  console.log("Success")
+};
+
+
 
   return (
     <Fragment>
@@ -59,6 +71,27 @@ export default function Header() {
               isMobile={state.isMobileMenu}
               handleCloseMenu={handleCloseMenu}
             />
+
+            {/** world coin IDKitWidget */}
+    <IDKitWidget
+    app_id="app_staging_f5cfa0b28ed2c732c8fd7a9d3df5e47a"
+    action="moment1"
+    false
+    verification_level={VerificationLevel.Device}
+    handleVerify={verifyProof}
+    onSuccess={onSuccess}>
+    {({ open }) => (
+                <button
+                  className='bg-yellow-600 text-lg px-7 py-4 font-bold'
+        onClick={open}
+      >
+        Verify with World ID
+      </button>
+    )}
+            </IDKitWidget>
+            
+
+
             <Flex sx={styles.buttonGroup}>
               <ConnectWallet/>
 
